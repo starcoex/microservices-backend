@@ -20,4 +20,10 @@ message NotifyEmailMessage {
     string content = 2;
   }
   Data data = 7;
+  EmailType emailType = 8;
+}
+
+enum EmailType {
+  NODEMAILER = 0; // Nodemailer 사용
+  MAILGUN = 1;    // Mailgun 사용
 }

@@ -1,0 +1,23 @@
+{
+  "name": "notifications",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:notifications": "nest build notifications && cp -R apps/notifications/src/email-templates dist/apps/notifications/"
+  },
+  "dependencies": {
+    "@nestjs-modules/mailer": "^2.0.2",
+    "ejs": "^3.1.10",
+    "mailgun.js": "^12.0.1",
+    "nestjs-mailgun": "^4.0.3",
+    "nodemailer": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/nodemailer": "^6.4.17"
+  }
+}
